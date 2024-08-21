@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://domych3jvijn8"]
+
+[ext_resource type="PackedScene" uid="uid://cna8aura7cv8x" path="res://models/levels/level0_cult_church_underground_complex/CultChurchUndergroundComplex.blend" id="1_piqpe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f4f34"]
+size = Vector3(1, 1, 11.9086)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CultChurchUndergroundComplex" parent="Area3D" instance=ExtResource("1_piqpe")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(3.99925, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.48907, -2.03256)
+shape = SubResource("BoxShape3D_f4f34")
